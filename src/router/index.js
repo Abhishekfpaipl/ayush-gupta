@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import HomeView from "../pages/HomeView.vue";
 
 const routes = [
   {
@@ -8,13 +8,39 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/terms-of-use",
+    name: "term-of-use",
+    component: () => import("@/pages/term-of-use.vue")
+  },
+  {
+    path: "/legal-warning",
+    name: "legal-warning",
+    component: () => import("@/pages/legal-warning.vue")
+  },
+  {
+    path: "/privacy-policy",
+    name: "privacy-policy",
+    component: () => import("@/pages/privacy-policy.vue")
+  },
+  {
+    path: "/reseller-program",
+    name: "reseller-program",
+    component: () => import("@/pages/reseller-program.vue")
+  }, 
+  {
+    path: "/contact-us",
+    name: "contact-us",
+    component: () => import("@/pages/contact-us.vue")
+  },
+  {
+    path: "/about-us",
+    name: "about-us",
+    component: () => import("@/pages/about-us.vue")
+  }, 
+  {
+    path: "/career",
+    name: "career-page",
+    component: () => import("@/pages/career-page.vue")
   },
 ];
 
