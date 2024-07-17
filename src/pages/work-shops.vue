@@ -7,7 +7,7 @@
         <div class="container my-5">
             <div class="row row-cols-1 row-cols-md-3">
                 <div class="col" v-for="(fair, index) in workshops" :key="index">
-                    <router-link to=""
+                    <router-link to="/workshop-detail"
                         class="text-decoration-none my-1 card border position-relative rounded-0 overflow-hidden">
                         <div class="card-img-container">
                             <img :src="fair.img" class="card-img-top rounded-0" alt="..."
@@ -49,6 +49,7 @@ export default {
         return {
             workshops: [
                 {
+                    sid:"work1",
                     img: "https://businesscoachingindia.com/sites/default/files/styles/event_banner/public/2024-06/Website%20Banner-05.jpg?itok=N5pmU9I9",
                     title: "Business Mastery program - july'24",
                     subtitle: "BMP- Business Mastery program",
@@ -58,6 +59,7 @@ export default {
                     end_date: "march 19, 2025",
                 },
                 {
+                    sid:"work2",
                     img: "https://businesscoachingindia.com/sites/default/files/styles/event_banner/public/2024-06/Website%20Banner-05.jpg?itok=N5pmU9I9",
                     title: "Business Mastery program - july'24",
                     subtitle: "BMP- Business Mastery program",
@@ -67,6 +69,7 @@ export default {
                     end_date: "march 19, 2025",
                 },
                 {
+                    sid:"work3",
                     img: "https://businesscoachingindia.com/sites/default/files/styles/event_banner/public/2024-06/Website%20Banner-05.jpg?itok=N5pmU9I9",
                     title: "Business Mastery program - july'24",
                     subtitle: "BMP- Business Mastery program",

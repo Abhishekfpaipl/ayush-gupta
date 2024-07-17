@@ -47,6 +47,11 @@ const routes = [
     name: "work-shops",
     component: () => import("@/pages/work-shops.vue")
   },
+  {
+    path: "/workshop-detail",
+    name: "workshop-detail",
+    component: () => import("@/pages/workshop-detail.vue")
+  },
 ];
 
 const router = createRouter({
